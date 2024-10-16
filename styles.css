@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #070A0E; /* Background color */
+  color: #737373; /* Default text color */
+}
+
+header {
+  background-color: #004AAD; /* Header color */
+  color: #fff; /* White text in header */
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Center nav items */
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative; /* Position for dropdown */
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff; /* White link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #737373; /* Grey hover effect */
+}
+
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position it below the parent */
+  background-color: #004AAD; /* Background for dropdown */
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  padding: 10px 20px; /* Padding for dropdown items */
+}
+
+.dropdown li a {
+  color: #fff; /* White link color */
+}
+
+.dropdown li a:hover {
+  color: #737373; /* Grey hover effect */
+}
+
+.hero {
+  background: url('https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg') no-repeat center center/cover; /* Background image */
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  background: rgba(0, 74, 173, 0.7); /* Dark transparent background for hero */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #004AAD; /* Button color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #003b8d; /* Darker blue on hover */
+}
+
+.services, .about, .contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #ecf0f1; /* Light grey background */
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.services h2, .about h2, .contact h2 {
+  color: #004AAD; /* Dark Blue for section headings */
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.service {
+  max-width: 220px;
+  padding: 20px;
+  background: #fff; /* White background for service cards */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background-color: #004AAD; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #003b8d; /* Darker blue on hover */
+}
+
+footer {
+  background-color: #004AAD; /* Footer color */
+  color: #fff; /* White text in footer */
+  text-align: center;
+  padding: 15px 0;
+}
